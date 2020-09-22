@@ -1,0 +1,35 @@
+.container{
+    margin: 50px O;
+}
+
+.card{
+    margin: 0 2% !important;
+    width: 300px;
+}
+
+.infected{
+    border-bottom: 10px solid rgba(0,0,255,0.5);
+}
+
+.infected_cpt{
+    color: rgba(0,0,255,0.5);
+    font-weight: bold;
+}
+
+.recovered{
+    border-bottom: 10px solid rgba(0,255,0,0.5);
+}
+
+.recovered_cpt{
+    color: rgba(0,255,0,0.5);
+    font-weight: bold;
+}
+
+.deaths{
+    border-bottom: 10px solid rgba(255,0,0,0.5);
+}
+
+.deaths_cpt{
+    color: rgba(255,0,0,0.5);
+    font-weight: bold;
+}
