@@ -29,6 +29,7 @@ const Cards = ({ data: { confirmed,recovered,deaths,lastUpdate} }) => {
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Guéris</Typography>
+                        <Typography className={styles.recovered_cpt}>{((recovered.value / confirmed.value) * 100).toFixed(2)} % des cas actifs</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
@@ -39,6 +40,7 @@ const Cards = ({ data: { confirmed,recovered,deaths,lastUpdate} }) => {
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Décès</Typography>
+                        <Typography className={styles.deaths_cpt}>{((deaths.value / confirmed.value) * 100).toFixed(2)} % des cas actifs</Typography>
                     </CardContent>
                 </Grid>
             </Grid>
